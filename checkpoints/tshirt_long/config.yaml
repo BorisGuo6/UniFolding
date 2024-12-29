@@ -1,0 +1,54 @@
+config:
+  datamodule:
+    batch_size: 16
+    dataset_split:
+    - 8
+    - 1
+    - 1
+    delta_coverage_as_reward: true
+    depth_scale_range:
+    - 0.1
+    - 1.0
+    fling_aug_types:
+    - depth
+    - flip
+    - affine
+    - random_permute
+    fold_aug_types:
+    - depth
+    - affine
+    h5_path: /home/hanxue/data/GarmentImitation/VR_Imitation/vr_imitation_flattening-folding-long_v5_dataset/Tshirt/data.h5
+    intrinsic_name: camera_intrinsic_scanner_v2.json
+    max_depth_offset: 0.03
+    max_fling_rot_angle: 180
+    max_fold_rot_angle: 20
+    max_normal_rot_angle: 20
+    normal_aug_types:
+    - depth
+    - affine
+    num_pc_sample: 20000
+    num_pc_sample_final: 4000
+    num_rotations: 10
+    num_workers: 4
+    primitive_classes:
+    - fling
+    - drag
+    - fold1
+    - fold2
+    - pick_and_place
+    - done
+    primitive_idxs:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    reward_alpha: 2.0
+    reward_beta: 1.0
+    sigma: 0.025
+    split_seed: 0
+    use_augmentation: true
+    use_tanh_reward: true
+    voxel_size: 0.002
+ 
