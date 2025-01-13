@@ -1,5 +1,5 @@
 # Customize
-CONDA_ENV=unifold
+CONDA_ENV=unifold2
 CONDA_ROOT=$(conda info --base)
 set -e
 
